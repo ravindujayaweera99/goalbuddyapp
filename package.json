@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node backend/server",
-    "server": "nodemon --env-file=.env backend/server"
+    "server": "nodemon --env-file=.env backend/server",
+    "client": "npm start --prefix frontend"
   },
   "author": "",
   "license": "ISC",
