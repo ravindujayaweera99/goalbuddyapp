@@ -87,16 +87,16 @@ h3 {
 }
 
 .goals {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 10px;
 }
 
 .goal {
   background-color: #f4f4f4;
   margin: 10px 0;
-  padding: 20px 0 10px;
+  padding: 32px 32px;
   position: relative;
+  width: 50%;
 }
 
 .goal .close {
@@ -195,6 +195,7 @@ h3 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -211,5 +212,15 @@ h3 {
 
   .heading p {
     font-size: 1.5rem;
+  }
+
+  .goals {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .goal {
+    width: 100%;
   }
 }
